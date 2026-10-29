@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f3">
+  <meta name="description" content="Удобная витрина банковских продуктов. Сравнивайте предложения и переходите на сайты банков.">
+  <title>выбор. — Банковские предложения в одном месте</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="На главную"><span class="brand-symbol">◈</span> выбор<span class="brand-dot">.</span></a>
+      <nav class="header-links" aria-label="Навигация">
+        <a href="#offers">Предложения</a>
+        <a href="#how">Как это работает</a>
+      </nav>
+      <a class="header-cta" href="#offers">Подобрать <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-pulse"></span> Каталог банковских продуктов</div>
+        <h1>Финансовые<br>решения — <span>проще.</span></h1>
+        <p>Дебетовые карты, кредитки, кредиты и вклады — в одном месте. Выбирайте предложение и переходите к оформлению на сайте банка.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#offers">Смотреть предложения <span aria-hidden="true">↗</span></a>
+          <span class="hero-note">Без регистрации на нашем сайте</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="halo"></div>
+        <div class="art-label art-label-top"><span class="tiny-dot"></span> Выбор есть</div>
+        <div class="art-card card-back"><span class="art-mini-logo">◈</span><div class="card-wave"></div><span class="art-card-bottom">ДЛЯ КАЖДОГО ДНЯ</span></div>
+        <div class="art-card card-front"><div class="art-card-top"><span>выбор.</span><span>✳</span></div><div class="art-chip"></div><div class="art-dashes">•••• &nbsp; •••• &nbsp; ••••</div><div class="art-card-bottom">НАЙДИ СВОЁ</div></div>
+        <div class="art-label art-label-bottom">Подбор без лишнего <span>↗</span></div>
+      </div>
+    </section>
+
+    <section class="offers-section" id="offers">
+      <div class="container">
+        <div class="section-heading"><div><div class="section-kicker">СРАВНИВАЙ И ВЫБИРАЙ</div><h2>Все предложения <span>в одном месте</span></h2></div><p>Условия уточняйте на официальном сайте банка перед оформлением.</p></div>
+        <div class="catalog-bar">
+          <div class="tabs" role="group" aria-label="Категория банковских предложений">
+            <button type="button" class="tab active" data-category="all" aria-pressed="true">Все</button>
+            <button type="button" class="tab" data-category="debit" aria-pressed="false">Дебетовые</button>
+            <button type="button" class="tab" data-category="credit-card" aria-pressed="false">Кредитные карты</button>
+            <button type="button" class="tab" data-category="loan" aria-pressed="false">Кредиты</button>
+            <button type="button" class="tab" data-category="deposit" aria-pressed="false">Вклады</button>
+            <button type="button" class="tab" data-category="business" aria-pressed="false">Для бизнеса</button>
+          </div>
+          <label class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Поиск по предложениям" aria-label="Поиск по предложениям"></label>
+        </div>
+        <div class="result-count" id="result-count" aria-live="polite">Загружаем предложения…</div>
+        <div class="offers-grid" id="offers-grid" aria-live="polite"></div>
+        <div class="empty-message" id="empty-message" hidden>Ничего не нашли. Попробуйте другую категорию или поисковый запрос.</div>
+        <div class="load-error" id="load-error" hidden>Не удалось загрузить предложения. Проверьте файл <code>data/offers.json</code> и обновите страницу.</div>
+        <p class="catalog-note">Внимание: это демонстрационный сайт. Примеры ниже не являются реальными банковскими предложениями. Перед публикацией замените их на актуальные офферы и проверьте обязательные раскрытия информации.</p>
+      </div>
+    </section>
+
+    <section class="how-section container" id="how">
+      <div class="how-head"><div class="section-kicker">НИЧЕГО СЛОЖНОГО</div><h2>Выбрать просто</h2></div>
+      <div class="steps">
+        <div class="step"><span class="step-no">01</span><h3>Откройте категорию</h3><p>Выберите карту, кредит, вклад или продукт для бизнеса.</p></div>
+        <div class="step"><span class="step-no">02</span><h3>Сравните предложения</h3><p>Посмотрите основные особенности и перейдите к подробностям.</p></div>
+        <div class="step"><span class="step-no">03</span><h3>Перейдите в банк</h3><p>Проверьте полные условия и подайте заявку на стороне банка.</p></div>
+      </div>
+    </section>
+
+    <section class="bottom-banner container"><div><div class="section-kicker">ВРЕМЯ ВЫБРАТЬ</div><h2>Ваш следующий шаг<br>начинается здесь.</h2></div><a class="light-button" href="#offers">К предложениям <span aria-hidden="true">↗</span></a></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><div><a class="brand" href="#top"><span class="brand-symbol">◈</span> выбор<span class="brand-dot">.</span></a><p>Независимая витрина банковских продуктов.</p></div><div class="footer-copy"><p>Сайт не является банком и не выдаёт кредиты. Информация носит справочный характер. Условия, тарифы и решение по заявке определяет банк.</p><p>На сайте могут использоваться партнёрские ссылки. Владелец сайта может получать вознаграждение за действия пользователей.</p><p>© <span id="year">2026</span> выбор. · Демонстрационный шаблон</p></div></div></footer>
+  <script src="./script.js" defer></script>
+</body>
+</html>
