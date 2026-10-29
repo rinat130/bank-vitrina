@@ -7,3 +7,270 @@
 @media(max-width:950px){.hero{gap:0;grid-template-columns:1fr 0.8fr}.hero h1{letter-spacing:-3px;font-size:clamp(46px,6vw,64px)}.hero-art{transform:scale(.84)}.offers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.section-heading{align-items:start}.catalog-bar{align-items:stretch}.search-wrap{flex:1}}
 @media(max-width:700px){.container{padding-inline:19px}.header-inner{height:69px}.header-links{display:none}.brand{font-size:24px}.header-cta{padding:11px 13px}.hero{display:block;padding-block:55px 48px;min-height:auto}.hero h1{font-size:clamp(41px,11vw,60px);letter-spacing:-2.7px;margin-top:23px}.hero-copy>p{font-size:13px}.hero-art{height:310px;transform:scale(.72);transform-origin:center center;margin-top:-10px;margin-bottom:-30px}.art-label-top{left:-35px}.art-label-bottom{right:-40px}.section-heading{display:block}.section-heading>p{margin-top:14px}.offers-section{padding:65px 0}.tabs{flex-wrap:nowrap;width:100%;overflow-x:auto;padding-bottom:6px}.tab{white-space:nowrap}.search-wrap{width:100%}.offers-grid{grid-template-columns:1fr;gap:13px}.offer-card{min-height:285px}.how-section{padding-block:65px}.steps{grid-template-columns:1fr}.step{min-height:145px}.step h3{margin-top:20px}.bottom-banner{margin-bottom:45px;padding:33px 29px;display:block}.bottom-banner h2{font-size:28px}.light-button{display:inline-flex;margin-top:25px}.footer-inner{display:block}.footer-copy{margin-top:23px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* ===== DARK PREMIUM DESIGN ===== */
+
+:root {
+  --bg: #090b16;
+  --ink: #f1efff;
+  --muted: #9c9db8;
+  --green: #8b67f5;
+  --accent: #c4a9ff;
+  --border: #2a2d49;
+  --white: #15182a;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.site-header {
+  background: #0c0e1d;
+  border-bottom: 1px solid #282a43;
+}
+
+.brand-symbol,
+.brand-dot,
+.hero h1 span,
+.section-heading h2 span {
+  color: #b59aff;
+}
+
+.header-links {
+  color: #b3b1c9;
+}
+
+.header-links a:hover {
+  color: #c8b7ff;
+}
+
+.header-cta {
+  background: #24213e;
+  color: #e3d8ff;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  background: linear-gradient(135deg, #fff, #b5a6ef);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, #aa82ff, #e1baff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-copy > p,
+.hero-note {
+  color: #a5a4bf;
+}
+
+.eyebrow {
+  background: #19162e;
+  border-color: #473668;
+  color: #cbb8ff;
+}
+
+.eyebrow-pulse,
+.tiny-dot {
+  background: #ae89ff;
+  box-shadow: 0 0 16px #9764ff80;
+}
+
+.primary-button {
+  background: linear-gradient(120deg, #7550eb, #a46bff);
+  color: white;
+  box-shadow: 0 12px 35px #8554ff45;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.primary-button:hover {
+  background: linear-gradient(120deg, #8a65ff, #bc8aff);
+  transform: translateY(-3px);
+  box-shadow: 0 17px 42px #8554ff66;
+}
+
+.halo {
+  background: radial-gradient(
+    circle,
+    #6d3bca66 0%,
+    #35205c55 45%,
+    transparent 75%
+  );
+}
+
+.card-back {
+  background: linear-gradient(135deg, #d3baff, #9567eb);
+  color: #352052;
+}
+
+.card-front {
+  background: linear-gradient(125deg, #5531ab, #16172f);
+  color: white;
+  box-shadow: 0 25px 65px #8851fa55;
+}
+
+.art-label {
+  background: #24213d;
+  color: #e5d9ff;
+  border-color: #49376b;
+  box-shadow: 0 12px 30px #0005;
+}
+
+.offers-section {
+  background: #0e1020;
+}
+
+.section-kicker {
+  color: #a588ff;
+}
+
+.section-heading > p,
+.result-count,
+.catalog-note {
+  color: #a3a3ba;
+}
+
+.tab {
+  background: #191c30;
+  color: #b3b0d0;
+  border: 1px solid #30324f;
+}
+
+.tab:hover {
+  background: #292343;
+}
+
+.tab.active {
+  background: #8059ed;
+  border-color: #9e7eff;
+  color: white;
+}
+
+.search-wrap {
+  background: #191c30;
+  border-color: #30324f;
+}
+
+.search-wrap input {
+  color: #f5f2ff;
+}
+
+.search-wrap input::placeholder {
+  color: #8587a6;
+}
+
+.search-icon {
+  color: #b39af0;
+}
+
+.offer-card {
+  background: linear-gradient(145deg, #1b1d35, #131627);
+  border: 1px solid #343653;
+  box-shadow: 0 6px 24px #0002;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  border-color: #8c70f1;
+  box-shadow: 0 20px 45px #7651e72c;
+}
+
+.bank-logo {
+  background: #29243f;
+  color: #c4aaff;
+}
+
+.offer-tag {
+  background: #36264e;
+  color: #d1b4ff;
+}
+
+.offer-bank,
+.offer-detail {
+  color: #a1a1bd;
+}
+
+.offer-title {
+  color: #f3efff;
+}
+
+.offer-feature {
+  border-top-color: #343653;
+  color: #c6abff;
+}
+
+.offer-link {
+  background: linear-gradient(90deg, #7852df, #9460f5);
+  color: white;
+}
+
+.offer-link:hover {
+  background: linear-gradient(90deg, #9169ff, #aa7dff);
+}
+
+.offer-link.disabled {
+  background: #2a2b40;
+  color: #9696ad;
+}
+
+.step {
+  background: #191c30;
+  border: 1px solid #30324f;
+}
+
+.step-no {
+  color: #b39aff;
+}
+
+.step h3 {
+  color: #f4f0ff;
+}
+
+.step p {
+  color: #a5a4bf;
+}
+
+.bottom-banner {
+  background: linear-gradient(125deg, #39246f, #171c40);
+  border: 1px solid #6a4db0;
+  box-shadow: 0 15px 50px #7548de24;
+}
+
+.bottom-banner .section-kicker {
+  color: #d2baff;
+}
+
+.light-button {
+  background: #e3d6ff;
+  color: #38216b;
+}
+
+.footer {
+  border-top-color: #292c45;
+}
+
+.footer-inner > div:first-child p,
+.footer-copy p {
+  color: #9292ae;
+}
+
+.empty-message,
+.load-error {
+  background: #1b1d35;
+  color: #c0bdd8;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline-color: #c4a9ff;
+}
