@@ -1,0 +1,74 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: offers
+    label: Банковские офферы
+    type: file
+    path: data/offers.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: ID оффера
+        type: string
+        required: true
+
+      - name: bank
+        label: Название банка
+        type: string
+        required: true
+
+      - name: title
+        label: Название продукта
+        type: string
+        required: true
+
+      - name: category
+        label: Категория
+        type: select
+        required: true
+        options:
+          values:
+            - name: debit
+              label: Дебетовые карты
+            - name: credit-card
+              label: Кредитные карты
+            - name: loan
+              label: Кредиты
+            - name: deposit
+              label: Вклады
+            - name: business
+              label: Для бизнеса
+
+      - name: badge
+        label: Надпись на карточке
+        type: string
+
+      - name: highlight
+        label: Главное преимущество
+        type: string
+
+      - name: detail
+        label: Краткие условия
+        type: text
+
+      - name: url
+        label: Партнерская ссылка
+        type: string
+
+      - name: logo
+        label: Логотип банка
+        type: image
+
+      - name: active
+        label: Показывать на сайте
+        type: boolean
+        default: true
+
+      - name: featured
+        label: Показывать первым
+        type: boolean
+        default: false
